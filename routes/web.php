@@ -16,5 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/login/facebook', 'FacebookController@redirectToFacebook');
- 
+
 Route::get('login/facebook/callback', 'FacebookController@getDataUserFacebook');
+
+Route::get('user', 'FacebookController@getUserFacebook');

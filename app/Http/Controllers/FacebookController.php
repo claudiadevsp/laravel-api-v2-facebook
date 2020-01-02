@@ -13,12 +13,17 @@ class FacebookController extends Controller
     }
 
     public function redirectToFacebook()
-    {        
+    {
        return $this->serviceFacebook->redirectToFacebookProvider();
     }
 
     public function getDataUserFacebook()
     {
         dd($this->serviceFacebook->handleProviderFacebookCallback());
+    }
+
+    public function getUserFacebook()
+    {
+        dd($this->serviceFacebook->getUserFacebook());
     }
 }

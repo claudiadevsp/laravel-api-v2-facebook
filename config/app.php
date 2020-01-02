@@ -2,6 +2,7 @@
 
 return [
 
+    'external_api' => env('EXTERNAL_API'),
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -174,6 +175,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\GuzzleClientServiceProvider::class,
 
     ],
 
